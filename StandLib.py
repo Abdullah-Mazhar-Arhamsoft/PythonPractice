@@ -158,3 +158,7 @@ import webbrowser
 
 # Random generate
 # print("".join(random.choices(string.ascii_letters + string.digits, k=4)))
+
+# Opening browser
+# print("Deployment completed")
+# webbrowser.open("http://google.com")

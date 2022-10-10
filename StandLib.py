@@ -8,6 +8,9 @@ import time
 import random
 import string
 import webbrowser
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+import smtplib
 
 
 # path = Path("ClassesPython.py")
@@ -162,3 +165,17 @@ import webbrowser
 # Opening browser
 # print("Deployment completed")
 # webbrowser.open("http://google.com")
+
+# Sending Email
+# message = MIMEMultipart()
+# message["from"] = "Abdullah Mazhar"
+# message["to"] = "okgoogle@gmail.com"
+# message["subject"] = "This is a test"
+# message.attach(MIMEText("Body"))
+#
+# with smtplib.SMTP(host="smtp.gmail.com", port=587) as smtp:
+#     smtp.ehlo()
+#     smtp.starttls()
+#     smtp.login("test.email@gmail.com", "testing123")
+#     smtp.send_message(message)
+#     print("sent")

@@ -21,3 +21,18 @@ import re
 #     sum = previous_num + i
 #     print('Current number: ', i, ' Previous number: ', previous_num, 'sum: ', sum)
 #     previous_num = i
+
+# Task 3
+# str = input('Enter Word: ')
+# i = 0
+# size = len(str)
+# while i < size:
+#     print(str[i])
+#     i = i + 2
+#
+# for x in range(0, size - 1, 2):
+#     print(str[x])
+#
+# z = list(str)
+# for x in z[0::2]:
+#     print(x)

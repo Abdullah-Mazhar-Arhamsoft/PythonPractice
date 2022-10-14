@@ -1,6 +1,7 @@
 import time
 import re
 
+
 # Task 1
 # x = ['is67', 'be3st', 'f23or', 'ge9eks', 'is67']
 # start = time.time()
@@ -36,3 +37,33 @@ import re
 # z = list(str)
 # for x in z[0::2]:
 #     print(x)
+
+# Task 4
+# def remove_word(word, n):
+#     print(word[n:])
+#
+# str =str(input('Enter word here: '))
+# number = int(input("Enter number here: "))
+# remove_word(str, number)
+
+# Task 5
+# def Check_numbers(user_list):
+#     print( f"Result: {user_list[0] == user_list[-1]}")
+#
+#
+# numbers_x = [10, 20, 30, 40, 10]
+# numbers_y = [75, 65, 35, 75, 30]
+# Check_numbers(numbers_x)
+# Check_numbers(numbers_y)
+
+# Task 6
+# str_x = "Emma is good developer. Emma is a writer"
+# str_split = str_x.split()
+# count = 0
+# for x in str_split:
+#     if x == 'Emma':
+#         count += 1
+#
+# print('Emma appeared', count, 'times.')
+# print(str_x.count('Emma'))
+

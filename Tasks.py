@@ -1,7 +1,6 @@
 import time
 import re
 
-
 # Task 1
 # x = ['is67', 'be3st', 'f23or', 'ge9eks', 'is67']
 # start = time.time()
@@ -67,3 +66,144 @@ import re
 # print('Emma appeared', count, 'times.')
 # print(str_x.count('Emma'))
 
+# Task 7
+# for i in range(1, 6):
+#     for j in range(0, i):
+#         print(i, end=" ")
+#     print()
+#
+# k = 1
+# for i in range(1, 6):
+#     for j in range(0, i):
+#         print(k, end=" ")
+#         k += 1
+#     print()
+
+# for i in range(1, 6):
+#     for j in range(1, 6):
+#         if abs(i - j) == 2 or i % 2 == 0 and i - j == 0:
+#             print('*', end=" ")
+#         else:
+#             print(" ", end=" ")
+#     print()
+
+
+# for i in range(1, 6):
+#     for j in range(1, 4):
+#         if i == 1 or i == 3:
+#             print('*', end=" ")
+#         elif abs(i - j) == 1 or abs(i - j) == 3 or abs(i - j) == 4 or abs(i - j) == 2:
+#             if i == 4 and abs(i - j) == 2 or i == 5 and abs(i - j) == 3:
+#                 print(' ', end=" ")
+#             else:
+#                 print('*', end=" ")
+#         else:
+#             print(' ', end=" ")
+#     print()
+
+# for i in range(1, 6):
+#     for j in range(1, 4):
+#         if j == 1 or j == 3:
+#             print('*', end=" ")
+#         elif abs(i - j) == 1:
+#             print('*', end=" ")
+#         else:
+#             print(' ', end=" ")
+#     print()
+
+# print()
+
+
+# Printing Your name
+# n = int(input('Enter size : '))
+#
+# while n < 8:
+#     print("Size lesser than 8. Try again")
+#     n = int(input('Enter size : '))
+#
+# last = (n//2)-1
+#
+# # Letter A
+# for i in range(n):
+#     for j in range(n // 2):
+#         if j == 0 or j == last or (i == 0 or i == last):
+#             print('*', end=" ")
+#         else:
+#             print(' ', end=" ")
+#     print()
+#
+# print()
+#
+# # Letter B
+# for i in range(n):
+#     for j in range(n // 2):
+#         if j == 0 or (j == last and i != 0 and i != last and i != n-1) or ((i == 0 or i == last or i == n-1) and j != last):
+#             print('*', end=" ")
+#         else:
+#             print(' ', end=" ")
+#     print()
+#
+# print()
+# # Letter D
+# for i in range(n):
+#     for j in range(n // 2):
+#         if j == 0 or (j == last and i != 0 and i != n-1) or ((i == 0 or i == n-1) and j != last):
+#             print('*', end=" ")
+#         else:
+#             print(' ', end=" ")
+#     print()
+#
+# print()
+#
+# # Letter U
+# for i in range(n):
+#     for j in range(n // 2):
+#         if ((j == 0 or j == last) and i != n-1) or (i == n-1 and (j != 0 or j != last)):
+#             print('*', end=" ")
+#         else:
+#             print(' ', end=" ")
+#     print()
+#
+# print()
+#
+# # Letter L
+# for i in range(n):
+#     for j in range(n // 2):
+#         if j == 0 or i == n-1 :
+#             print('*', end=" ")
+#         else:
+#             print(' ', end=" ")
+#     print()
+#
+# print()
+#
+# # Letter L
+# for i in range(n):
+#     for j in range(n // 2):
+#         if j == 0 or i == n-1 :
+#             print('*', end=" ")
+#         else:
+#             print(' ', end=" ")
+#     print()
+#
+# print()
+
+# Letter A
+for i in range(n):
+    for j in range(n // 2):
+        if j == 0 or j == last or (i == 0 or i == last):
+            print('*', end=" ")
+        else:
+            print(' ', end=" ")
+    print()
+
+print()
+
+# Letter H
+for i in range(n):
+    for j in range(n // 2):
+        if (j == 0 or j == last) and i != last or (i == last and (j != 0 or j != last)):
+            print('*', end=" ")
+        else:
+            print(' ', end=" ")
+    print()

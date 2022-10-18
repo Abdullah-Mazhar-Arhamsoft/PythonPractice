@@ -227,3 +227,16 @@ import re
 # print('After swaping: ')
 # print('x: ', x)
 # print('y', y)
+
+#Task 09
+# value = 244
+# new = 0
+# num = value
+# while num > 1:
+#     val = num % 10
+#     new = (new*10)+val
+#     num = num // 10
+#
+#
+# print('Before reverse: ', value)
+# print('After reverse: ', new)

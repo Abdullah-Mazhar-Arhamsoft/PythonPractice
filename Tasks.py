@@ -228,7 +228,7 @@ import re
 # print('x: ', x)
 # print('y', y)
 
-#Task 09
+# Task 09
 # value = 244
 # new = 0
 # num = value
@@ -240,3 +240,19 @@ import re
 #
 # print('Before reverse: ', value)
 # print('After reverse: ', new)
+
+# Task 10
+value = 15
+new = 0
+num = value
+binary_str = ""
+while num > 0:
+    print(num)
+    val = num % 2
+    binary_str += str(val)
+    print(val)
+    new = (new * 10) + val
+    num = num // 2
+
+print('Number: ', value)
+print('Binary: ', binary_str[::-1])

@@ -187,23 +187,43 @@ import re
 #     print()
 #
 # print()
+#
+# # Letter A
+# for i in range(n):
+#     for j in range(n // 2):
+#         if j == 0 or j == last or (i == 0 or i == last):
+#             print('*', end=" ")
+#         else:
+#             print(' ', end=" ")
+#     print()
+#
+# print()
+#
+# # Letter H
+# for i in range(n):
+#     for j in range(n // 2):
+#         if (j == 0 or j == last) and i != last or (i == last and (j != 0 or j != last)):
+#             print('*', end=" ")
+#         else:
+#             print(' ', end=" ")
+#     print()
 
-# Letter A
-for i in range(n):
-    for j in range(n // 2):
-        if j == 0 or j == last or (i == 0 or i == last):
-            print('*', end=" ")
-        else:
-            print(' ', end=" ")
-    print()
 
-print()
-
-# Letter H
-for i in range(n):
-    for j in range(n // 2):
-        if (j == 0 or j == last) and i != last or (i == last and (j != 0 or j != last)):
-            print('*', end=" ")
-        else:
-            print(' ', end=" ")
-    print()
+# Task 8
+# x = 30
+# y = 20
+# print('Before swaping: ')
+# print('x: ', x)
+# print('y', y)
+#
+# x = x+y
+# y = x-y
+# x = x-y
+#
+# x = x/y
+# y = x*y
+# x = y/x
+#
+# print('After swaping: ')
+# print('x: ', x)
+# print('y', y)

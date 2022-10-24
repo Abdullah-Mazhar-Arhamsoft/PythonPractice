@@ -214,7 +214,7 @@ import re
 # y = 20
 # print('Before swaping: ')
 # print('x: ', x)
-# print('y', y)
+# print('y: ', y)
 #
 # x = x+y
 # y = x-y
@@ -226,7 +226,7 @@ import re
 #
 # print('After swaping: ')
 # print('x: ', x)
-# print('y', y)
+# print('y: ', y)
 
 # Task 09
 # value = 244
@@ -247,10 +247,8 @@ new = 0
 num = value
 binary_str = ""
 while num > 0:
-    print(num)
     val = num % 2
     binary_str += str(val)
-    print(val)
     new = (new * 10) + val
     num = num // 2
 

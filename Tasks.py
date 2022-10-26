@@ -242,15 +242,16 @@ import re
 # print('After reverse: ', new)
 
 # Task 10
-value = 15
-new = 0
-num = value
-binary_str = ""
-while num > 0:
-    val = num % 2
-    binary_str += str(val)
-    new = (new * 10) + val
-    num = num // 2
+# value = 15
+# new = 0
+# num = value
+# binary_str = ""
+# while num > 0:
+#     val = num % 2
+#     binary_str += str(val)
+#     new = (new * 10) + val
+#     num = num // 2
+#
+# print('Number: ', value)
+# print('Binary: ', binary_str[::-1])
 
-print('Number: ', value)
-print('Binary: ', binary_str[::-1])

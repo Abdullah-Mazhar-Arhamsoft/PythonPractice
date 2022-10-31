@@ -22,50 +22,51 @@
 #             print([i, j])
 #             break
 
+#  Optimize Way
+# def IsPalindrome(x: int):
+#     temp = x
+#     if x == 0:
+#         return True
+#     temp_number = 0
+#     while temp > 0:
+#         num = temp % 10
+#         temp_number *= 10
+#         temp_number += num
+#         temp = temp // 10
+#
+#     if temp_number == x:
+#         return True
+#     else:
+#         return False
+#
+#  Less Optimize way
+# def isPalindrome(self, x: int) -> bool:
+#     bool_value = False
+#     temp = x
+#     list_x = []
+#     if x == 0:
+#         return True
+#
+#     while temp > 0:
+#         num = temp % 10
+#         temp = temp // 10
+#         list_x.append(num)
+#
+#     size = len(list_x)
+#     left = 0
+#     right = size - 1
+#
+#     while left <= right:
+#         if list_x[left] == list_x[right]:
+#             bool_value = True
+#             left += 1
+#             right -= 1
+#         else:
+#             bool_value = False
+#             break
+#
+#     return bool_value
 
-def IsPalindrome(x: int):
-    temp = x
-    if x == 0:
-        return True
-    temp_number = 0
-    while temp > 0:
-        num = temp % 10
-        temp_number *= 10
-        temp_number += num
-        temp = temp // 10
-
-    if temp_number == x:
-        return True
-    else:
-        return False
-
-    # def isPalindrome(self, x: int) -> bool:
-    #     bool_value = False
-    #     temp = x
-    #     list_x = []
-    #     if x == 0:
-    #         return True
-    #
-    #     while temp > 0:
-    #         num = temp % 10
-    #         temp = temp // 10
-    #         list_x.append(num)
-    #
-    #     size = len(list_x)
-    #     left = 0
-    #     right = size - 1
-    #
-    #     while left <= right:
-    #         if list_x[left] == list_x[right]:
-    #             bool_value = True
-    #             left += 1
-    #             right -= 1
-    #         else:
-    #             bool_value = False
-    #             break
-    #
-    #     return bool_value
-
-x = 10201
-print(IsPalindrome(x))
+# x = 10201
+# print(IsPalindrome(x))
 

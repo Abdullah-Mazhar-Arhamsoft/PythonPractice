@@ -93,28 +93,39 @@
 
 
 # Longest Common prefix (Task 14)
-def longestCommonPrefix(strs: list[str]) -> str:
+# def longestCommonPrefix(strs: list[str]) -> str:
+#
+#     minimum = min(map(len, strs))
+#     word = ""
+#
+#     for a in range(minimum):
+#         for b in range(1, len(strs)):
+#             if strs[0][a] == strs[b][a]:
+#                 ask = True
+#                 print("True")
+#             else:
+#                 ask = False
+#                 break
+#         if ask:
+#             word = word + strs[0][a]
+#             print("wo: ", word)
+#         else:
+#             break
+#
+#     return word
+#
+# st = ["c","acc","ccc"]
+# longestCommonPrefix(st)
 
-    minimum = min(map(len, strs))
-    word = ""
-
-    for a in range(minimum):
-        for b in range(1, len(strs)):
-            if strs[0][a] == strs[b][a]:
-                ask = True
-                print("True")
-            else:
-                ask = False
-                break
-        if ask:
-            word = word + strs[0][a]
-            print("wo: ", word)
-        else:
-            break
-
-    return word
+# Remove duplicate from sorted array(Task 26)
+def removeDuplicates(nums: list[int]) -> int:
+    i = 0
+    while i < len(nums) - 1:
+        if nums[i] == nums[i + 1]:
+            nums.remove(nums[i])
+            i -= 1
+        i += 1
 
 
-
-st = ["c","acc","ccc"]
-longestCommonPrefix(st)
+nums = [0, 0, 1, 1, 1, 2, 2]
+removeDuplicates(nums)

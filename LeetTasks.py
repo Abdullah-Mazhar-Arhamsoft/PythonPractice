@@ -118,14 +118,26 @@
 # longestCommonPrefix(st)
 
 # Remove duplicate from sorted array(Task 26)
-def removeDuplicates(nums: list[int]) -> int:
-    i = 0
-    while i < len(nums) - 1:
-        if nums[i] == nums[i + 1]:
-            nums.remove(nums[i])
-            i -= 1
-        i += 1
+# def removeDuplicates(nums: list[int]) -> int:
+#     i = 0
+#     while i < len(nums) - 1:
+#         if nums[i] == nums[i + 1]:
+#             nums.remove(nums[i])
+#             i -= 1
+#         i += 1
+#
+#
+# nums = [0, 0, 1, 1, 1, 2, 2]
+# removeDuplicates(nums)
 
+# plus One(Task 66)
+def plusOne(digits: list[int]) -> list[int]:
+    num = 0
+    for i in digits:
+        num = (num + i)*10
 
-nums = [0, 0, 1, 1, 1, 2, 2]
-removeDuplicates(nums)
+    num = (num // 10) + 1
+    print([int(item) for item in str(num)])
+
+nums = [9,9,9]
+plusOne(nums)

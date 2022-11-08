@@ -131,13 +131,29 @@
 # removeDuplicates(nums)
 
 # plus One(Task 66)
-def plusOne(digits: list[int]) -> list[int]:
-    num = 0
-    for i in digits:
-        num = (num + i)*10
+# def plusOne(digits: list[int]) -> list[int]:
+#     num = 0
+#     for i in digits:
+#         num = (num + i)*10
+#
+#     num = (num // 10) + 1
+#     print([int(item) for item in str(num)])
+#
+# nums = [9,9,9]
+# plusOne(nums)
 
-    num = (num // 10) + 1
-    print([int(item) for item in str(num)])
+# Square root (Task 69)
+def mySqrt(x: int) -> int:
+    val = x
+    count = 0
+    n = 1
+    while val - n >= 0:
+        val -= n
+        n += 2
+        count += 1
 
-nums = [9,9,9]
-plusOne(nums)
+    print(count)
+    return count
+
+num = 1
+mySqrt(num)

@@ -1,3 +1,6 @@
+import random
+
+
 # Task 1
 # def twoSum(nums, target: int):
 #     dict = {}
@@ -143,17 +146,34 @@
 # plusOne(nums)
 
 # Square root (Task 69)
-def mySqrt(x: int) -> int:
-    val = x
-    count = 0
-    n = 1
-    while val - n >= 0:
-        val -= n
-        n += 2
-        count += 1
+# def mySqrt(x: int) -> int:
+#     val = x
+#     count = 0
+#     n = 1
+#     while val - n >= 0:
+#         val -= n
+#         n += 2
+#         count += 1
+#
+#     print(count)
+#     return count
+#
+# num = 1
+# mySqrt(num)
 
-    print(count)
-    return count
+# Climbing stair(Task 70)
+def climbStairs(n: int) -> int:
+    if n == 1 or n == 2:
+        return n
+    else:
+        i, j, step = 1, 2, 0
+        for _ in range(3, n + 1):
+            step = i + j
+            i = j
+            j = step
+        return step
 
-num = 1
-mySqrt(num)
+
+
+num = 15
+print(climbStairs(num))

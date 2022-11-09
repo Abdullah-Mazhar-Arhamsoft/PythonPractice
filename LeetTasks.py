@@ -162,18 +162,30 @@ import random
 # mySqrt(num)
 
 # Climbing stair(Task 70)
-def climbStairs(n: int) -> int:
-    if n == 1 or n == 2:
-        return n
-    else:
-        i, j, step = 1, 2, 0
-        for _ in range(3, n + 1):
-            step = i + j
-            i = j
-            j = step
-        return step
+# def climbStairs(n: int) -> int:
+#     if n == 1 or n == 2:
+#         return n
+#     else:
+#         i, j, step = 1, 2, 0
+#         for _ in range(3, n + 1):
+#             step = i + j
+#             i = j
+#             j = step
+#         return step
+#
+# num = 15
+# print(climbStairs(num))
+
+# Merge Sorted Array (Task 88)
+def merge(nums1: list[int], m: int, nums2: list[int], n: int) -> None:
+
+    del nums1[m:]
+    nums1.extend(nums2)
+    nums1.sort()
 
 
-
-num = 15
-print(climbStairs(num))
+nums1 = [0,0,0,0,0]
+nums2 = [1, 2, 3, 5]
+m = 0
+n = 4
+merge(nums1, m, nums2, n)

@@ -1,6 +1,3 @@
-import random
-
-
 # Task 1
 # def twoSum(nums, target: int):
 #     dict = {}
@@ -177,15 +174,36 @@ import random
 # print(climbStairs(num))
 
 # Merge Sorted Array (Task 88)
-def merge(nums1: list[int], m: int, nums2: list[int], n: int) -> None:
+# def merge(nums1: list[int], m: int, nums2: list[int], n: int) -> None:
+#
+#     del nums1[m:]
+#     nums1.extend(nums2)
+#     nums1.sort()
+#
+#
+# nums1 = [0,0,0,0,0]
+# nums2 = [1, 2, 3, 5]
+# m = 0
+# n = 4
+# merge(nums1, m, nums2, n)
 
-    del nums1[m:]
-    nums1.extend(nums2)
-    nums1.sort()
+# Valid Parentheses(Task 20)
+def isValid(s: str) -> bool:
+    if len(s) % 2 != 0:
+        return False
+    par_dict = {'(': ')', '{': '}', '[': ']'}
+    stack = []
+    for char in s:
+        if char in par_dict.keys():
+            stack.append(char)
+            print(stack)
+        else:
+            if stack == []:
+                return False
+            open_brac = stack.pop()
+            if char != par_dict[open_brac]:
+                return False
+    return stack == []
 
-
-nums1 = [0,0,0,0,0]
-nums2 = [1, 2, 3, 5]
-m = 0
-n = 4
-merge(nums1, m, nums2, n)
+s = "[{}]"
+print(isValid(s))

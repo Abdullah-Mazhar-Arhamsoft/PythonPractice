@@ -188,22 +188,22 @@
 # merge(nums1, m, nums2, n)
 
 # Valid Parentheses(Task 20)
-def isValid(s: str) -> bool:
-    if len(s) % 2 != 0:
-        return False
-    par_dict = {'(': ')', '{': '}', '[': ']'}
-    stack = []
-    for char in s:
-        if char in par_dict.keys():
-            stack.append(char)
-            print(stack)
-        else:
-            if stack == []:
-                return False
-            open_brac = stack.pop()
-            if char != par_dict[open_brac]:
-                return False
-    return stack == []
-
-s = "[{}]"
-print(isValid(s))
+# def isValid(s: str) -> bool:
+#     if len(s) % 2 != 0:
+#         return False
+#     par_dict = {'(': ')', '{': '}', '[': ']'}
+#     stack = []
+#     for char in s:
+#         if char in par_dict.keys():
+#             stack.append(char)
+#             print(stack)
+#         else:
+#             if stack == []:
+#                 return False
+#             open_brac = stack.pop()
+#             if char != par_dict[open_brac]:
+#                 return False
+#     return stack == []
+#
+# s = "[{}]"
+# print(isValid(s))

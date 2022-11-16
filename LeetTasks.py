@@ -207,3 +207,8 @@
 #
 # s = "[{}]"
 # print(isValid(s))
+
+# Binary Tree inorder Traversal (Task 94)
+# class Solution:
+#     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+#         return (self.inorderTraversal(root.left) + [root.val] + self.inorderTraversal(root.right)) if root else []

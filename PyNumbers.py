@@ -55,7 +55,15 @@ from numpy import random
 #     print(x)
 
 # Random number array
-x = random.randint(100, size=(3, 5))
+# x = random.randint(100, size=(3, 5))
+# print(x)
+# y = random.choice([3, 5, 7, 9], size=(3, 5))
+# print(y)
+# z = random.choice([3, 5, 7, 9], p=[0.1, 0.3, 0.5, 0.1], size=(3, 5))
+# print(z)
+
+x = [1, 2, 3, 4, 5, 6]
+y = x.copy()
+y.append(8)
 print(x)
-y = random.choice([3, 5, 7, 9], size=(3, 5))
 print(y)

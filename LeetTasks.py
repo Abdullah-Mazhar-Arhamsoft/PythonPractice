@@ -212,3 +212,46 @@
 # class Solution:
 #     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
 #         return (self.inorderTraversal(root.left) + [root.val] + self.inorderTraversal(root.right)) if root else []
+
+# Best Time to Buy and Sell Stock(Task 121)
+def maxProfit(prices: list[int]) -> int:
+    # total = 0
+    # size = len(prices)
+    # for i in range(size - 1, -1, -1):
+    #     for x in range(0, i):
+    #         sum = prices[i] - prices[x]
+    #         if sum > 0 and sum > total:
+    #             total = sum
+    #
+    # return total
+
+    # i = 0
+    # total = 0
+    # size = len(prices)
+    # while i <= size - 1:
+    #     temp = prices.pop(0)
+    #     if prices != []:
+    #         maximum = max(prices)
+    #         sum = temp - maximum
+    #         if sum < 0:
+    #             sum = abs(sum)
+    #             if sum > total:
+    #                 total = sum
+    #     i += 1
+
+    i, maxi, j = 0, 0, 1
+    while j < len(prices):
+        if prices[i] < prices[j]:
+            if maxi < prices[j] - prices[i]:
+                maxi = prices[j] - prices[i]
+        else:
+            i = j
+        j += 1
+
+    return maxi
+
+
+
+
+x = [2,1,2,1,0,1,2]
+print(maxProfit(x))

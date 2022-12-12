@@ -1,7 +1,6 @@
 # This is a sample Python script.
 import math
 
-
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
@@ -40,7 +39,7 @@ import math
 
 # Press the green button in the gutter to run the script.
 # if __name__ == '__main__':
-# hello
+    # hello
 
 
     # try:
@@ -76,7 +75,7 @@ import math
     #         stored_data[data] += 1
     #     else:
     #         stored_data[data] = 1
-    # print(dict(sorted(stored_data.items(), key=lambda x: x[1], reverse=True)))
+    # print(dict(sorted(stored_data.items(), key=lambda x: x[1], reverse=True)))00.0
 
     # less Optimized way
     # sentence_list = [*sentence.lower()]
@@ -229,4 +228,3 @@ import math
     # print(name1[:index_of_l] + 'o')
     # print(name1[:4] + 'o')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/

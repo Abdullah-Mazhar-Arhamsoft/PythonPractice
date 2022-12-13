@@ -228,3 +228,7 @@ import math
     # print(name1[:index_of_l] + 'o')
     # print(name1[:4] + 'o')
 
+# (ACII Value of word)
+# s = "la"
+# print(''.join(str(ord(c)) for c in s))
+
